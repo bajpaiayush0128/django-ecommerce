@@ -64,6 +64,8 @@ This repository contains a Django-based web application of an ecommerce site. Th
 
 8. Access the application at `http://localhost:8000` in your web browser.
 
+9. Add gmail and password in settings.py for email authentication to work and stripe keys in keys.py for payment integration (look stripe docs for help at stripe.com/docs)
+
 ## Contributing
 
 Contributions are welcome! If you would like to contribute to this project, please follow these steps:
