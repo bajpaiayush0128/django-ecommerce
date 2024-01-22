@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block title %}
+  LogIn
+{% endblock title %}
+{% block content %}
+<div class="card bg-light p-5">
+  <h3 class="text-dark">LogIn</h3>
+  <form action="/authenticate/login/" method="post">
+    {% csrf_token %}
+    <label for="email">Email</label>
+    <div class="fore-group">
+      <input type="email" class="form-control" id="email" name="email" required>
+    </div>
+    <label for="pass1">Password</label>
+    <div class="fore-group">
+      <input type="password" class="form-control" id="pass1" name="pass1" required>
+    </div>
+    <br>
+    <button type="submit" class="btn btn-dark">LogIn</button>
+    <br>
+    New User? <a href="/authenticate/signup/">SignUp</a>
+    <br>
+  </form>
+</div>
+{% endblock content %}
